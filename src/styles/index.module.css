@@ -1,0 +1,59 @@
+.title {
+    font-weight: 500;
+    font-size: 5rem;
+}
+.description {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.sendEmail {
+    background-color: #eee5;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 95vw;
+    align-items: flex-start;
+}
+.emailMsg {
+    font-size: 1.5rem;
+}
+.emailForm {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+.emailField {
+    border: 1px solid #222;
+    padding: 5px;
+    border-right: 0;
+    width: 400px;
+    max-width: 80vw;
+}
+.btnSendEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border: 1px solid #555;
+}
+.btnSendEmail:hover {
+    cursor: pointer;
+    filter: blur(0.5px);
+}
+.btnSendEmail:disabled {
+    cursor: default;
+    filter: contrast(0.8);
+}
+.errorMsg {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: red;
+}
+.successMsg {
+    font-size: 2rem;
+    color: #0f0;
+    font-weight: 500;
+    text-align: center;
+}

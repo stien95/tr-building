@@ -1,0 +1,17 @@
+{
+    "index": {
+        "title": "Welcome to Tip Roulette",
+        "description": "For now the page is still under construction",
+        "msgEmail": "Send me an email when available"
+    },
+    "error": {
+        "email": {
+            "length": "Invalid email length",
+            "used": "Email is already in use"
+        }
+    },
+    "message": {
+        "success": "Your email has been registered successfully",
+        "success_2": "We're working on improving it. Thank you for your patience as we build it!"
+    }
+}

@@ -1,0 +1,19 @@
+
+{
+    "index": {
+        "title": "Bienvenido a Tip Roulette",
+        "description": "Por ahora la página aún está en construcción",
+        "msgEmail": "Enviame un correo cuando este disponible"
+    },
+    
+    "error": {
+        "email": {
+            "length": "La longitud del correo no es valido",
+            "used": "El correo ya está registrado"
+        }
+    },
+    "message": {
+        "success": "Tu email ha sido registrado exitosamente",
+        "success_2": "Estamos trabajando en mejorar esta página. ¡Gracias por tu paciencia mientras la construimos!"
+    }
+}
