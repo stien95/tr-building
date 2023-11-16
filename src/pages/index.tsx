@@ -5,6 +5,12 @@ import styles from "@/styles/index.module.css";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const apiUrl = process.env.NODE_ENV === 'development'
+  ? 'http://localhost:3000/api/sendEmail'  // Ruta para desarrollo
+  : '/api/sendEmail';
+
+
+
 export default function Home() {
   const { t, l } = useLang();
   const [loading, setLoading] = useState(false);
@@ -30,7 +36,7 @@ export default function Home() {
       return setError(t("error.email.length"));
     }
     try {
-      const res = await axios.post("/api/sendEmail", { email, lang });
+      const res = await axios.post(apiUrl, { email, lang });
       setIsSuccess(true);
       localStorage.setItem("isEmail", JSON.stringify(true));
       setError("");
