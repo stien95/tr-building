@@ -5,6 +5,9 @@ export default async function sendEmailHandler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  if (req.method != "POST") {
+    return res.status(405).json({"Error": "invalid method"});
+  }
   const { email, lang } = req.body;
   try {
     const createEmail = await prisma.email.create({
