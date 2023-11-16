@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev\" \"node functions/server.js\"",
-    "build": "next build",
+    "build": "next build && prisma generate",
     "start": "next start & node server.js",
     "lint": "next lint"
   },
