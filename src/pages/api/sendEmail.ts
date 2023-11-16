@@ -15,6 +15,8 @@ export default async function sendEmailHandler(
     });
     res.status(201).json({message: "Email registered successfully"});
   } catch (err) {
-    res.status(500).json({error: err});
+    console.error('Error al enviar el correo electrónico:', err);
+    res.status(500).json({ mensaje: 'Error interno del servidor al enviar el correo electrónico' });
+  
   }
 }
